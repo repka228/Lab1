@@ -31,21 +31,23 @@
             listBoxPoint = new ListBox();
             listBoxLines = new ListBox();
             listBoxPolyLines = new ListBox();
-            addPoint = new Button();
-            changePoint = new Button();
-            DeletePoint = new Button();
-            addLine = new Button();
-            changeLine = new Button();
+            buttonAddPoint = new Button();
+            buttonChangePoint = new Button();
+            buttonDeletePoint = new Button();
+            buttonAddLine = new Button();
+            buttonChangeLine = new Button();
             deleteLine = new Button();
             addPolyLine = new Button();
             changePolyLine = new Button();
             deletePolyLine = new Button();
             panelPointsTools = new Panel();
             panelPolyLinesTools = new Panel();
-            panelLinesTools = new Panel();
+            buttonScalePolyLine = new Button();
+            buttonPanelLinesTools = new Panel();
+            buttonOffsetLine = new Button();
             panelPointsTools.SuspendLayout();
             panelPolyLinesTools.SuspendLayout();
-            panelLinesTools.SuspendLayout();
+            buttonPanelLinesTools.SuspendLayout();
             SuspendLayout();
             // 
             // listBoxPoint
@@ -61,75 +63,75 @@
             // 
             listBoxLines.FormattingEnabled = true;
             listBoxLines.ItemHeight = 15;
-            listBoxLines.Location = new Point(299, 120);
+            listBoxLines.Location = new Point(218, 135);
             listBoxLines.Name = "listBoxLines";
-            listBoxLines.Size = new Size(209, 319);
+            listBoxLines.Size = new Size(235, 304);
             listBoxLines.TabIndex = 1;
             // 
             // listBoxPolyLines
             // 
             listBoxPolyLines.FormattingEnabled = true;
             listBoxPolyLines.ItemHeight = 15;
-            listBoxPolyLines.Location = new Point(542, 120);
+            listBoxPolyLines.Location = new Point(459, 135);
             listBoxPolyLines.Name = "listBoxPolyLines";
-            listBoxPolyLines.Size = new Size(216, 319);
+            listBoxPolyLines.Size = new Size(299, 304);
             listBoxPolyLines.TabIndex = 2;
             // 
-            // addPoint
+            // buttonAddPoint
             // 
-            addPoint.Location = new Point(4, 3);
-            addPoint.Name = "addPoint";
-            addPoint.Size = new Size(193, 23);
-            addPoint.TabIndex = 3;
-            addPoint.Text = "Добавить точку";
-            addPoint.UseVisualStyleBackColor = true;
-            addPoint.Click += addPoint_Click;
+            buttonAddPoint.Location = new Point(4, 3);
+            buttonAddPoint.Name = "buttonAddPoint";
+            buttonAddPoint.Size = new Size(193, 23);
+            buttonAddPoint.TabIndex = 3;
+            buttonAddPoint.Text = "Добавить точку";
+            buttonAddPoint.UseVisualStyleBackColor = true;
+            buttonAddPoint.Click += addPoint_Click;
             // 
-            // changePoint
+            // buttonChangePoint
             // 
-            changePoint.Location = new Point(4, 32);
-            changePoint.Name = "changePoint";
-            changePoint.Size = new Size(193, 23);
-            changePoint.TabIndex = 4;
-            changePoint.Text = "Изменить точку";
-            changePoint.UseVisualStyleBackColor = true;
-            changePoint.Click += changePoint_Click;
+            buttonChangePoint.Location = new Point(4, 32);
+            buttonChangePoint.Name = "buttonChangePoint";
+            buttonChangePoint.Size = new Size(193, 23);
+            buttonChangePoint.TabIndex = 4;
+            buttonChangePoint.Text = "Изменить точку";
+            buttonChangePoint.UseVisualStyleBackColor = true;
+            buttonChangePoint.Click += changePoint_Click;
             // 
-            // DeletePoint
+            // buttonDeletePoint
             // 
-            DeletePoint.Location = new Point(4, 61);
-            DeletePoint.Name = "DeletePoint";
-            DeletePoint.Size = new Size(193, 23);
-            DeletePoint.TabIndex = 5;
-            DeletePoint.Text = "Удалить точку";
-            DeletePoint.UseVisualStyleBackColor = true;
-            DeletePoint.Click += DeletePoint_Click;
+            buttonDeletePoint.Location = new Point(4, 61);
+            buttonDeletePoint.Name = "buttonDeletePoint";
+            buttonDeletePoint.Size = new Size(193, 23);
+            buttonDeletePoint.TabIndex = 5;
+            buttonDeletePoint.Text = "Удалить точку";
+            buttonDeletePoint.UseVisualStyleBackColor = true;
+            buttonDeletePoint.Click += DeletePoint_Click;
             // 
-            // addLine
+            // buttonAddLine
             // 
-            addLine.Location = new Point(7, 3);
-            addLine.Name = "addLine";
-            addLine.Size = new Size(193, 23);
-            addLine.TabIndex = 6;
-            addLine.Text = "Добавить линию";
-            addLine.UseVisualStyleBackColor = true;
-            addLine.Click += addLine_Click;
+            buttonAddLine.Location = new Point(7, 3);
+            buttonAddLine.Name = "buttonAddLine";
+            buttonAddLine.Size = new Size(225, 23);
+            buttonAddLine.TabIndex = 6;
+            buttonAddLine.Text = "Добавить линию";
+            buttonAddLine.UseVisualStyleBackColor = true;
+            buttonAddLine.Click += addLine_Click;
             // 
-            // changeLine
+            // buttonChangeLine
             // 
-            changeLine.Location = new Point(7, 32);
-            changeLine.Name = "changeLine";
-            changeLine.Size = new Size(193, 23);
-            changeLine.TabIndex = 7;
-            changeLine.Text = "Изменить линию";
-            changeLine.UseVisualStyleBackColor = true;
-            changeLine.Click += changeLine_Click;
+            buttonChangeLine.Location = new Point(7, 32);
+            buttonChangeLine.Name = "buttonChangeLine";
+            buttonChangeLine.Size = new Size(225, 23);
+            buttonChangeLine.TabIndex = 7;
+            buttonChangeLine.Text = "Изменить линию";
+            buttonChangeLine.UseVisualStyleBackColor = true;
+            buttonChangeLine.Click += changeLine_Click;
             // 
             // deleteLine
             // 
             deleteLine.Location = new Point(7, 61);
             deleteLine.Name = "deleteLine";
-            deleteLine.Size = new Size(193, 23);
+            deleteLine.Size = new Size(225, 23);
             deleteLine.TabIndex = 8;
             deleteLine.Text = "Удалить линию";
             deleteLine.UseVisualStyleBackColor = true;
@@ -139,7 +141,7 @@
             // 
             addPolyLine.Location = new Point(11, 3);
             addPolyLine.Name = "addPolyLine";
-            addPolyLine.Size = new Size(193, 23);
+            addPolyLine.Size = new Size(285, 23);
             addPolyLine.TabIndex = 9;
             addPolyLine.Text = "Добавить многоугольник";
             addPolyLine.UseVisualStyleBackColor = true;
@@ -149,7 +151,7 @@
             // 
             changePolyLine.Location = new Point(11, 32);
             changePolyLine.Name = "changePolyLine";
-            changePolyLine.Size = new Size(193, 23);
+            changePolyLine.Size = new Size(285, 23);
             changePolyLine.TabIndex = 10;
             changePolyLine.Text = "Изменить многоугольник";
             changePolyLine.UseVisualStyleBackColor = true;
@@ -159,7 +161,7 @@
             // 
             deletePolyLine.Location = new Point(11, 61);
             deletePolyLine.Name = "deletePolyLine";
-            deletePolyLine.Size = new Size(193, 23);
+            deletePolyLine.Size = new Size(285, 23);
             deletePolyLine.TabIndex = 11;
             deletePolyLine.Text = "Удалить многоугольник";
             deletePolyLine.UseVisualStyleBackColor = true;
@@ -167,33 +169,55 @@
             // 
             // panelPointsTools
             // 
-            panelPointsTools.Controls.Add(addPoint);
-            panelPointsTools.Controls.Add(changePoint);
-            panelPointsTools.Controls.Add(DeletePoint);
+            panelPointsTools.Controls.Add(buttonAddPoint);
+            panelPointsTools.Controls.Add(buttonChangePoint);
+            panelPointsTools.Controls.Add(buttonDeletePoint);
             panelPointsTools.Location = new Point(12, 12);
             panelPointsTools.Name = "panelPointsTools";
-            panelPointsTools.Size = new Size(200, 100);
+            panelPointsTools.Size = new Size(200, 90);
             panelPointsTools.TabIndex = 12;
             // 
             // panelPolyLinesTools
             // 
+            panelPolyLinesTools.Controls.Add(buttonScalePolyLine);
             panelPolyLinesTools.Controls.Add(addPolyLine);
             panelPolyLinesTools.Controls.Add(changePolyLine);
             panelPolyLinesTools.Controls.Add(deletePolyLine);
-            panelPolyLinesTools.Location = new Point(542, 18);
+            panelPolyLinesTools.Location = new Point(459, 12);
             panelPolyLinesTools.Name = "panelPolyLinesTools";
-            panelPolyLinesTools.Size = new Size(216, 100);
+            panelPolyLinesTools.Size = new Size(299, 111);
             panelPolyLinesTools.TabIndex = 6;
             // 
-            // panelLinesTools
+            // buttonScalePolyLine
             // 
-            panelLinesTools.Controls.Add(addLine);
-            panelLinesTools.Controls.Add(changeLine);
-            panelLinesTools.Controls.Add(deleteLine);
-            panelLinesTools.Location = new Point(299, 15);
-            panelLinesTools.Name = "panelLinesTools";
-            panelLinesTools.Size = new Size(209, 100);
-            panelLinesTools.TabIndex = 0;
+            buttonScalePolyLine.Location = new Point(11, 85);
+            buttonScalePolyLine.Name = "buttonScalePolyLine";
+            buttonScalePolyLine.Size = new Size(285, 23);
+            buttonScalePolyLine.TabIndex = 12;
+            buttonScalePolyLine.Text = "Масштабировать";
+            buttonScalePolyLine.UseVisualStyleBackColor = true;
+            buttonScalePolyLine.Click += buttonScale_Click;
+            // 
+            // buttonPanelLinesTools
+            // 
+            buttonPanelLinesTools.Controls.Add(buttonOffsetLine);
+            buttonPanelLinesTools.Controls.Add(buttonAddLine);
+            buttonPanelLinesTools.Controls.Add(buttonChangeLine);
+            buttonPanelLinesTools.Controls.Add(deleteLine);
+            buttonPanelLinesTools.Location = new Point(218, 12);
+            buttonPanelLinesTools.Name = "buttonPanelLinesTools";
+            buttonPanelLinesTools.Size = new Size(235, 115);
+            buttonPanelLinesTools.TabIndex = 0;
+            // 
+            // buttonOffsetLine
+            // 
+            buttonOffsetLine.Location = new Point(7, 89);
+            buttonOffsetLine.Name = "buttonOffsetLine";
+            buttonOffsetLine.Size = new Size(225, 23);
+            buttonOffsetLine.TabIndex = 9;
+            buttonOffsetLine.Text = "Сместить 2-ю точку";
+            buttonOffsetLine.UseVisualStyleBackColor = true;
+            buttonOffsetLine.Click += buttonOffset_Click;
             // 
             // Main
             // 
@@ -201,7 +225,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(panelPolyLinesTools);
-            Controls.Add(panelLinesTools);
+            Controls.Add(buttonPanelLinesTools);
             Controls.Add(panelPointsTools);
             Controls.Add(listBoxPolyLines);
             Controls.Add(listBoxLines);
@@ -210,7 +234,7 @@
             Text = "Form1";
             panelPointsTools.ResumeLayout(false);
             panelPolyLinesTools.ResumeLayout(false);
-            panelLinesTools.ResumeLayout(false);
+            buttonPanelLinesTools.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -219,17 +243,19 @@
         private ListBox listBoxPoint;
         private ListBox listBoxLines;
         private ListBox listBoxPolyLines;
-        private Button addPoint;
-        private Button changePoint;
-        private Button DeletePoint;
-        private Button addLine;
-        private Button changeLine;
+        private Button buttonAddPoint;
+        private Button buttonChangePoint;
+        private Button buttonDeletePoint;
+        private Button buttonAddLine;
+        private Button buttonChangeLine;
         private Button deleteLine;
         private Button addPolyLine;
         private Button changePolyLine;
         private Button deletePolyLine;
         private Panel panelPointsTools;
         private Panel panelPolyLinesTools;
-        private Panel panelLinesTools;
+        private Panel buttonPanelLinesTools;
+        private Button buttonScalePolyLine;
+        private Button buttonOffsetLine;
     }
 }

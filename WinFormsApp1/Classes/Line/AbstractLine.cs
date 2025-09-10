@@ -32,5 +32,18 @@ namespace WinFormsApp1.Classes.Line
         }
         public void SetP1(ColoredPoint p1) => this.p1 = p1;
         public void SetP2(ColoredPoint p2) => this.p2 = p2;
+        public void OffsetSecondPointByAngle(double angleDegrees, double distance)
+        {
+            ColoredPoint p1 = GetP1();
+            ColoredPoint p2 = GetP2();
+
+            double angleRadians = angleDegrees * Math.PI / 180.0;
+
+            int offsetX = (int)(distance * Math.Cos(angleRadians));
+            int offsetY = (int)(distance * Math.Sin(angleRadians));
+
+            p2.SetX(p1.GetX() + offsetX);
+            p2.SetY(p1.GetY() + offsetY);
+        }
     };
 }

@@ -48,7 +48,7 @@
             // 
             // buttonSave
             // 
-            buttonSave.Location = new Point(126, 186);
+            buttonSave.Location = new Point(47, 151);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(75, 23);
             buttonSave.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             // buttonExit
             // 
-            buttonExit.Location = new Point(126, 215);
+            buttonExit.Location = new Point(47, 180);
             buttonExit.Name = "buttonExit";
             buttonExit.Size = new Size(75, 23);
             buttonExit.TabIndex = 1;
@@ -68,36 +68,37 @@
             // 
             // numericUpDownY2
             // 
-            numericUpDownY2.Location = new Point(211, 58);
+            numericUpDownY2.Location = new Point(97, 56);
             numericUpDownY2.Name = "numericUpDownY2";
-            numericUpDownY2.Size = new Size(120, 23);
+            numericUpDownY2.Size = new Size(43, 23);
             numericUpDownY2.TabIndex = 2;
             // 
             // numericUpDownX2
             // 
-            numericUpDownX2.Location = new Point(211, 27);
+            numericUpDownX2.Location = new Point(97, 27);
             numericUpDownX2.Name = "numericUpDownX2";
-            numericUpDownX2.Size = new Size(120, 23);
+            numericUpDownX2.Size = new Size(43, 23);
             numericUpDownX2.TabIndex = 3;
+            numericUpDownX2.Value = new decimal(new int[] { 100, 0, 0, 0 });
             // 
             // numericUpDownX1
             // 
-            numericUpDownX1.Location = new Point(56, 27);
+            numericUpDownX1.Location = new Point(32, 27);
             numericUpDownX1.Name = "numericUpDownX1";
-            numericUpDownX1.Size = new Size(120, 23);
+            numericUpDownX1.Size = new Size(43, 23);
             numericUpDownX1.TabIndex = 4;
             // 
             // numericUpDownY1
             // 
-            numericUpDownY1.Location = new Point(56, 58);
+            numericUpDownY1.Location = new Point(32, 58);
             numericUpDownY1.Name = "numericUpDownY1";
-            numericUpDownY1.Size = new Size(120, 23);
+            numericUpDownY1.Size = new Size(43, 23);
             numericUpDownY1.TabIndex = 5;
             // 
             // labelX
             // 
             labelX.AutoSize = true;
-            labelX.Location = new Point(36, 29);
+            labelX.Location = new Point(12, 27);
             labelX.Name = "labelX";
             labelX.Size = new Size(14, 15);
             labelX.TabIndex = 6;
@@ -106,7 +107,7 @@
             // labelY
             // 
             labelY.AutoSize = true;
-            labelY.Location = new Point(36, 60);
+            labelY.Location = new Point(12, 60);
             labelY.Name = "labelY";
             labelY.Size = new Size(14, 15);
             labelY.TabIndex = 7;
@@ -115,7 +116,7 @@
             // labelPointFirst
             // 
             labelPointFirst.AutoSize = true;
-            labelPointFirst.Location = new Point(83, 9);
+            labelPointFirst.Location = new Point(32, 9);
             labelPointFirst.Name = "labelPointFirst";
             labelPointFirst.Size = new Size(48, 15);
             labelPointFirst.TabIndex = 8;
@@ -124,7 +125,7 @@
             // labelPointSecond
             // 
             labelPointSecond.AutoSize = true;
-            labelPointSecond.Location = new Point(240, 9);
+            labelPointSecond.Location = new Point(97, 9);
             labelPointSecond.Name = "labelPointSecond";
             labelPointSecond.Size = new Size(48, 15);
             labelPointSecond.TabIndex = 9;
@@ -132,14 +133,14 @@
             // 
             // panelColorLine
             // 
-            panelColorLine.Location = new Point(183, 115);
+            panelColorLine.Location = new Point(97, 85);
             panelColorLine.Name = "panelColorLine";
             panelColorLine.Size = new Size(47, 45);
             panelColorLine.TabIndex = 10;
             // 
             // buttonChooseColor
             // 
-            buttonChooseColor.Location = new Point(83, 115);
+            buttonChooseColor.Location = new Point(12, 87);
             buttonChooseColor.Name = "buttonChooseColor";
             buttonChooseColor.Size = new Size(75, 45);
             buttonChooseColor.TabIndex = 0;
@@ -147,11 +148,11 @@
             buttonChooseColor.UseVisualStyleBackColor = true;
             buttonChooseColor.Click += buttonChooseColor_Click;
             // 
-            // AddLine
+            // FormAddLine
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(352, 257);
+            ClientSize = new Size(168, 219);
             Controls.Add(buttonChooseColor);
             Controls.Add(panelColorLine);
             Controls.Add(labelPointSecond);
@@ -164,7 +165,7 @@
             Controls.Add(numericUpDownY2);
             Controls.Add(buttonExit);
             Controls.Add(buttonSave);
-            Name = "AddLine";
+            Name = "FormAddLine";
             Text = "Lines";
             ((System.ComponentModel.ISupportInitialize)numericUpDownY2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownX2).EndInit();

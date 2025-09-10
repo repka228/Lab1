@@ -2,6 +2,7 @@ using WinFormsApp1.Classes;
 using WinFormsApp1.Classes.Line;
 using WinFormsApp1.Classes.Point;
 using WinFormsApp1.Forms;
+using WinFormsApp1.Forms.FormPolyLine;
 
 namespace WinFormsApp1
 {
@@ -23,7 +24,7 @@ namespace WinFormsApp1
                 int index = colorPoints.IndexOf(selectedPoint);
                 FormAddPoint editPointForm = new FormAddPoint();
 
-                editPointForm.colorPointCreate += (s, newPoint) => { colorPoints[index] = newPoint;};
+                editPointForm.colorPointCreate += (s, newPoint) => { colorPoints[index] = newPoint; };
 
                 if (editPointForm.ShowDialog() == DialogResult.OK)
                 {
@@ -55,9 +56,11 @@ namespace WinFormsApp1
             if (listBoxLines.SelectedItem is LineWithColor selectedLine)
             {
                 int index = linesWithColor.IndexOf(selectedLine);
-                FormAddLine editLineForm = new ();
+                FormAddLine editLineForm = new();
 
-                editLineForm.lineWithColorCreate += (s, newLine) => {linesWithColor[index] = newLine;
+                editLineForm.lineWithColorCreate += (s, newLine) =>
+                {
+                    linesWithColor[index] = newLine;
                 };
 
                 if (editLineForm.ShowDialog() == DialogResult.OK)
@@ -92,9 +95,9 @@ namespace WinFormsApp1
             if (listBoxPolyLines.SelectedItem is PolyLine selectedPolyLine)
             {
                 int index = polyLines.IndexOf(selectedPolyLine);
-                FormAddPolyLine editPolyLineForm = new (selectedPolyLine);
+                FormAddPolyLine editPolyLineForm = new(selectedPolyLine);
 
-                editPolyLineForm.polyLineCreate += (s, newLine) =>{ polyLines[index] = newLine;};
+                editPolyLineForm.polyLineCreate += (s, newLine) => { polyLines[index] = newLine; };
 
                 if (editPolyLineForm.ShowDialog() == DialogResult.OK)
                 {
@@ -208,6 +211,45 @@ namespace WinFormsApp1
                 GeometryType.PolyLine => "Полилиния",
                 _ => "Объект"
             };
+        }
+
+        private void buttonOffset_Click(object sender, EventArgs e)
+        {
+            if (listBoxLines.SelectedItem is LineWithColor selectedLine)
+            {
+                int index = linesWithColor.IndexOf(selectedLine);
+                FormOffsetLine editLineForm = new(selectedLine);
+
+                editLineForm.LineWithColorOffset += (s, newLine) =>
+                {
+                    linesWithColor[index] = newLine;
+                };
+
+                if (editLineForm.ShowDialog() == DialogResult.OK)
+                {
+                    MessageBox.Show("Точка смещена!");
+                    ShowList();
+                }
+            }
+            else MessageBox.Show("Выберите линию для смещения!");
+        }
+        private void buttonScale_Click(object sender, EventArgs e)
+        {
+            if (listBoxPolyLines.SelectedItem is PolyLine selectedPolyLine)
+            {
+                int index = polyLines.IndexOf(selectedPolyLine);
+                FormScalePolyLine editLineForm = new(selectedPolyLine);
+                editLineForm.polyLineScale += (s, polyLine) =>
+                {
+                    polyLines[index] = polyLine ;
+                };
+                if (editLineForm.ShowDialog() == DialogResult.OK)
+                {
+                    MessageBox.Show("Точка смещена!");
+                    ShowList();
+                }
+            }
+            else MessageBox.Show("Выберите линию для смещения!");
         }
     }
 }

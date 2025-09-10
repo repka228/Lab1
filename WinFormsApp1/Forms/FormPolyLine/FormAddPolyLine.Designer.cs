@@ -32,7 +32,6 @@
             buttonExit = new Button();
             listBoxLines = new ListBox();
             buttonAddLine = new Button();
-            buttonChangeScale = new Button();
             buttonChangeLine = new Button();
             buttonDeleteLine = new Button();
             buttonChooseColor = new Button();
@@ -41,7 +40,7 @@
             // 
             // buttonSave
             // 
-            buttonSave.Location = new Point(69, 392);
+            buttonSave.Location = new Point(69, 299);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(75, 23);
             buttonSave.TabIndex = 0;
@@ -51,7 +50,7 @@
             // 
             // buttonExit
             // 
-            buttonExit.Location = new Point(69, 421);
+            buttonExit.Location = new Point(69, 328);
             buttonExit.Name = "buttonExit";
             buttonExit.Size = new Size(75, 23);
             buttonExit.TabIndex = 1;
@@ -63,9 +62,9 @@
             // 
             listBoxLines.FormattingEnabled = true;
             listBoxLines.ItemHeight = 15;
-            listBoxLines.Location = new Point(47, 99);
+            listBoxLines.Location = new Point(12, 99);
             listBoxLines.Name = "listBoxLines";
-            listBoxLines.Size = new Size(120, 139);
+            listBoxLines.Size = new Size(211, 139);
             listBoxLines.TabIndex = 2;
             // 
             // buttonAddLine
@@ -77,16 +76,6 @@
             buttonAddLine.Text = "Добавить линию";
             buttonAddLine.UseVisualStyleBackColor = true;
             buttonAddLine.Click += buttonAddLine_Click;
-            // 
-            // buttonChangeScale
-            // 
-            buttonChangeScale.Location = new Point(47, 363);
-            buttonChangeScale.Name = "buttonChangeScale";
-            buttonChangeScale.Size = new Size(120, 23);
-            buttonChangeScale.TabIndex = 4;
-            buttonChangeScale.Text = "Масштабировать";
-            buttonChangeScale.UseVisualStyleBackColor = true;
-            buttonChangeScale.Click += buttonChangeScale_Click;
             // 
             // buttonChangeLine
             // 
@@ -129,12 +118,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(235, 456);
+            ClientSize = new Size(235, 364);
             Controls.Add(panelPolyLineColor);
             Controls.Add(buttonChooseColor);
             Controls.Add(buttonDeleteLine);
             Controls.Add(buttonChangeLine);
-            Controls.Add(buttonChangeScale);
             Controls.Add(buttonAddLine);
             Controls.Add(listBoxLines);
             Controls.Add(buttonExit);
@@ -150,7 +138,6 @@
         private Button buttonExit;
         private ListBox listBoxLines;
         private Button buttonAddLine;
-        private Button buttonChangeScale;
         private Button buttonChangeLine;
         private Button buttonDeleteLine;
         private Button buttonChooseColor;

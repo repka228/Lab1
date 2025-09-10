@@ -20,5 +20,5 @@ namespace WinFormsApp1.Classes.Line
             SetP1(p1);
             SetP2(p2);
         }
-    };
-}
+    }
+};
