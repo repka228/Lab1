@@ -43,6 +43,7 @@
             // 
             // buttonAddPoint
             // 
+            buttonAddPoint.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonAddPoint.Location = new Point(12, 155);
             buttonAddPoint.Name = "buttonAddPoint";
             buttonAddPoint.Size = new Size(103, 23);
@@ -53,6 +54,7 @@
             // 
             // buttonExit
             // 
+            buttonExit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonExit.Location = new Point(23, 184);
             buttonExit.Name = "buttonExit";
             buttonExit.Size = new Size(75, 23);
@@ -63,6 +65,7 @@
             // 
             // numericUpDown1
             // 
+            numericUpDown1.Anchor = AnchorStyles.Left;
             numericUpDown1.Location = new Point(32, 63);
             numericUpDown1.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numericUpDown1.Minimum = new decimal(new int[] { 1000, 0, 0, int.MinValue });
@@ -91,6 +94,7 @@
             // 
             // labelY
             // 
+            labelY.Anchor = AnchorStyles.Left;
             labelY.AutoSize = true;
             labelY.Location = new Point(12, 65);
             labelY.Name = "labelY";
@@ -100,6 +104,7 @@
             // 
             // chooseColorButton
             // 
+            chooseColorButton.Anchor = AnchorStyles.Left;
             chooseColorButton.Location = new Point(12, 92);
             chooseColorButton.Name = "chooseColorButton";
             chooseColorButton.Size = new Size(75, 47);
@@ -110,6 +115,7 @@
             // 
             // panelColorPoint
             // 
+            panelColorPoint.Anchor = AnchorStyles.Right;
             panelColorPoint.Location = new Point(93, 92);
             panelColorPoint.Name = "panelColorPoint";
             panelColorPoint.Size = new Size(56, 47);

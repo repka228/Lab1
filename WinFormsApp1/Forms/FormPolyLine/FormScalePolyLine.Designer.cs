@@ -36,6 +36,7 @@
             // 
             // buttonScale
             // 
+            buttonScale.Anchor = AnchorStyles.Bottom;
             buttonScale.Location = new Point(55, 41);
             buttonScale.Name = "buttonScale";
             buttonScale.Size = new Size(120, 23);
@@ -46,6 +47,7 @@
             // 
             // buttonExit
             // 
+            buttonExit.Anchor = AnchorStyles.Bottom;
             buttonExit.Location = new Point(76, 70);
             buttonExit.Name = "buttonExit";
             buttonExit.Size = new Size(75, 23);
@@ -56,6 +58,7 @@
             // 
             // numericUpDownScaleFactor
             // 
+            numericUpDownScaleFactor.Anchor = AnchorStyles.Top;
             numericUpDownScaleFactor.Location = new Point(55, 12);
             numericUpDownScaleFactor.Name = "numericUpDownScaleFactor";
             numericUpDownScaleFactor.Size = new Size(120, 23);

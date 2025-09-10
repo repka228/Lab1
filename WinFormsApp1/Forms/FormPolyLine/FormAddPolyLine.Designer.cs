@@ -40,6 +40,7 @@
             // 
             // buttonSave
             // 
+            buttonSave.Anchor = AnchorStyles.Bottom;
             buttonSave.Location = new Point(69, 299);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(75, 23);
@@ -50,6 +51,7 @@
             // 
             // buttonExit
             // 
+            buttonExit.Anchor = AnchorStyles.Bottom;
             buttonExit.Location = new Point(69, 328);
             buttonExit.Name = "buttonExit";
             buttonExit.Size = new Size(75, 23);
@@ -60,6 +62,7 @@
             // 
             // listBoxLines
             // 
+            listBoxLines.Anchor = AnchorStyles.Left;
             listBoxLines.FormattingEnabled = true;
             listBoxLines.ItemHeight = 15;
             listBoxLines.Location = new Point(12, 99);
@@ -99,6 +102,7 @@
             // 
             // buttonChooseColor
             // 
+            buttonChooseColor.Anchor = AnchorStyles.Left;
             buttonChooseColor.Location = new Point(26, 252);
             buttonChooseColor.Name = "buttonChooseColor";
             buttonChooseColor.Size = new Size(75, 41);
@@ -109,6 +113,7 @@
             // 
             // panelPolyLineColor
             // 
+            panelPolyLineColor.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panelPolyLineColor.Location = new Point(126, 252);
             panelPolyLineColor.Name = "panelPolyLineColor";
             panelPolyLineColor.Size = new Size(41, 41);

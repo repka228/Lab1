@@ -48,6 +48,7 @@
             // 
             // buttonSave
             // 
+            buttonSave.Anchor = AnchorStyles.Bottom;
             buttonSave.Location = new Point(47, 151);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(75, 23);
@@ -58,6 +59,7 @@
             // 
             // buttonExit
             // 
+            buttonExit.Anchor = AnchorStyles.Bottom;
             buttonExit.Location = new Point(47, 180);
             buttonExit.Name = "buttonExit";
             buttonExit.Size = new Size(75, 23);

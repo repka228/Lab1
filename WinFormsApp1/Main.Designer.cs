@@ -52,6 +52,7 @@
             // 
             // listBoxPoint
             // 
+            listBoxPoint.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             listBoxPoint.FormattingEnabled = true;
             listBoxPoint.ItemHeight = 15;
             listBoxPoint.Location = new Point(12, 118);
@@ -61,6 +62,7 @@
             // 
             // listBoxLines
             // 
+            listBoxLines.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             listBoxLines.FormattingEnabled = true;
             listBoxLines.ItemHeight = 15;
             listBoxLines.Location = new Point(218, 135);
@@ -70,6 +72,7 @@
             // 
             // listBoxPolyLines
             // 
+            listBoxPolyLines.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             listBoxPolyLines.FormattingEnabled = true;
             listBoxPolyLines.ItemHeight = 15;
             listBoxPolyLines.Location = new Point(459, 135);
@@ -79,6 +82,7 @@
             // 
             // buttonAddPoint
             // 
+            buttonAddPoint.Anchor = AnchorStyles.Top;
             buttonAddPoint.Location = new Point(4, 3);
             buttonAddPoint.Name = "buttonAddPoint";
             buttonAddPoint.Size = new Size(193, 23);
@@ -89,6 +93,7 @@
             // 
             // buttonChangePoint
             // 
+            buttonChangePoint.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             buttonChangePoint.Location = new Point(4, 32);
             buttonChangePoint.Name = "buttonChangePoint";
             buttonChangePoint.Size = new Size(193, 23);
@@ -99,6 +104,7 @@
             // 
             // buttonDeletePoint
             // 
+            buttonDeletePoint.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             buttonDeletePoint.Location = new Point(4, 61);
             buttonDeletePoint.Name = "buttonDeletePoint";
             buttonDeletePoint.Size = new Size(193, 23);
@@ -109,6 +115,7 @@
             // 
             // buttonAddLine
             // 
+            buttonAddLine.Anchor = AnchorStyles.Top;
             buttonAddLine.Location = new Point(7, 3);
             buttonAddLine.Name = "buttonAddLine";
             buttonAddLine.Size = new Size(225, 23);
@@ -119,6 +126,7 @@
             // 
             // buttonChangeLine
             // 
+            buttonChangeLine.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             buttonChangeLine.Location = new Point(7, 32);
             buttonChangeLine.Name = "buttonChangeLine";
             buttonChangeLine.Size = new Size(225, 23);
@@ -129,6 +137,7 @@
             // 
             // deleteLine
             // 
+            deleteLine.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             deleteLine.Location = new Point(7, 61);
             deleteLine.Name = "deleteLine";
             deleteLine.Size = new Size(225, 23);
@@ -139,6 +148,7 @@
             // 
             // addPolyLine
             // 
+            addPolyLine.Anchor = AnchorStyles.Top;
             addPolyLine.Location = new Point(11, 3);
             addPolyLine.Name = "addPolyLine";
             addPolyLine.Size = new Size(285, 23);
@@ -149,6 +159,7 @@
             // 
             // changePolyLine
             // 
+            changePolyLine.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             changePolyLine.Location = new Point(11, 32);
             changePolyLine.Name = "changePolyLine";
             changePolyLine.Size = new Size(285, 23);
@@ -159,6 +170,7 @@
             // 
             // deletePolyLine
             // 
+            deletePolyLine.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             deletePolyLine.Location = new Point(11, 61);
             deletePolyLine.Name = "deletePolyLine";
             deletePolyLine.Size = new Size(285, 23);
@@ -179,6 +191,7 @@
             // 
             // panelPolyLinesTools
             // 
+            panelPolyLinesTools.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panelPolyLinesTools.Controls.Add(buttonScalePolyLine);
             panelPolyLinesTools.Controls.Add(addPolyLine);
             panelPolyLinesTools.Controls.Add(changePolyLine);
@@ -190,6 +203,7 @@
             // 
             // buttonScalePolyLine
             // 
+            buttonScalePolyLine.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             buttonScalePolyLine.Location = new Point(11, 85);
             buttonScalePolyLine.Name = "buttonScalePolyLine";
             buttonScalePolyLine.Size = new Size(285, 23);
@@ -200,6 +214,7 @@
             // 
             // buttonPanelLinesTools
             // 
+            buttonPanelLinesTools.Anchor = AnchorStyles.Top;
             buttonPanelLinesTools.Controls.Add(buttonOffsetLine);
             buttonPanelLinesTools.Controls.Add(buttonAddLine);
             buttonPanelLinesTools.Controls.Add(buttonChangeLine);
@@ -211,6 +226,7 @@
             // 
             // buttonOffsetLine
             // 
+            buttonOffsetLine.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             buttonOffsetLine.Location = new Point(7, 89);
             buttonOffsetLine.Name = "buttonOffsetLine";
             buttonOffsetLine.Size = new Size(225, 23);

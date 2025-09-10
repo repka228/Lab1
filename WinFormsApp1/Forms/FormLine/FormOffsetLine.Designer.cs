@@ -40,6 +40,7 @@
             // 
             // buttonOffset
             // 
+            buttonOffset.Anchor = AnchorStyles.Bottom;
             buttonOffset.Location = new Point(56, 83);
             buttonOffset.Name = "buttonOffset";
             buttonOffset.Size = new Size(75, 23);
@@ -50,6 +51,7 @@
             // 
             // buttonExit
             // 
+            buttonExit.Anchor = AnchorStyles.Bottom;
             buttonExit.Location = new Point(56, 112);
             buttonExit.Name = "buttonExit";
             buttonExit.Size = new Size(75, 23);
@@ -60,6 +62,7 @@
             // 
             // numericUpDownDegrees
             // 
+            numericUpDownDegrees.Anchor = AnchorStyles.Right;
             numericUpDownDegrees.Location = new Point(84, 40);
             numericUpDownDegrees.Maximum = new decimal(new int[] { 360, 0, 0, 0 });
             numericUpDownDegrees.Name = "numericUpDownDegrees";
@@ -68,6 +71,7 @@
             // 
             // numericUpDownDistance
             // 
+            numericUpDownDistance.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             numericUpDownDistance.Location = new Point(84, 7);
             numericUpDownDistance.Maximum = new decimal(new int[] { 500, 0, 0, 0 });
             numericUpDownDistance.Name = "numericUpDownDistance";
@@ -85,6 +89,7 @@
             // 
             // labelDegrees
             // 
+            labelDegrees.Anchor = AnchorStyles.Left;
             labelDegrees.AutoSize = true;
             labelDegrees.Location = new Point(12, 42);
             labelDegrees.Name = "labelDegrees";
